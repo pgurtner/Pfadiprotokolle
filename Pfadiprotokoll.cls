@@ -26,7 +26,7 @@
     \begin{itemize}
         \item Anwesend: #3
         \item Unentschuldigt abwesend: #4
-        \item Protokollant: #5
+        \item Protokollführung: #5
     \end{itemize}
     \tableofcontents
 }
