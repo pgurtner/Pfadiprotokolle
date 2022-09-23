@@ -57,3 +57,6 @@ Kurzer Doppelpfeil nach rechts.
 
 ## La
 Kurzer Doppelpfeil nach links.
+
+# Makefile
+Funktioniert nur auf Linux. Braucht `pdflatex` installiert.
