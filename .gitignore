@@ -1,1 +1,2 @@
-Protokolle/
+Protokolle/*
+!Protokolle/Makefile
