@@ -1,5 +1,8 @@
 Kleine LaTeX Klasse für Protokolle bei den Pfadfindern.
 
+# todo
+https://www.ctan.org/pkg/xparse könnte sich für die Befehle anbieten.
+
 # Aktuelle Befehle
 ## header
 Parameter:

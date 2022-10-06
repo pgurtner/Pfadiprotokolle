@@ -9,8 +9,11 @@
 \RequirePackage{geometry}
 \RequirePackage{titling}
 \RequirePackage{transparent}
+\RequirePackage[normalem]{ulem}
 
 \setcounter{tocdepth}{1}
+\setlength{\parindent}{0pt}
+
 \renewcommand*\contentsname{TOPs}
 \geometry{
     a4paper,
@@ -25,22 +28,22 @@
     \maketitle
     \begin{itemize}
         \item Anwesend: #3
-        \item Unentschuldigt abwesend: #4
+        \item Unentschuldigt abwesend oder zu spät: #4
         \item Protokollführung: #5
     \end{itemize}
     \tableofcontents
 }
 
 \newcommand{\topic}[1]{
-    \section{#1}
+    \section{#1} \label{#1}
 }
 
 \newcommand{\subtopic}[1]{
-    \subsection{#1}
+    \subsection{#1} \label{#1}
 }
 
 \newcommand{\subsubtopic}[1]{
-    \subsubsection{#1}
+    \subsubsection{#1} \label{#1}
 }
 
 \newcommand{\voting}[4]{
@@ -52,7 +55,9 @@
     \end{itemize}
 }
 
-\newcommand{\termin}[1]{#1}
+\newcommand{\termin}[1]{
+    \textbf{#1}
+}
 \newcommand{\comment}[1]{
     \transparent{0.6}
     \textit{#1}
