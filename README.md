@@ -16,19 +16,13 @@ Parameter:
 Parameter:
 1. Überschrift
 
-Aktuell nur alias für `\section`
-
 ## subtopic
 Parameter:
 1. Überschrift
 
-Aktuell nur alias für `\subsection`
-
 ## subsubtopic
 Parameter:
 1. Überschrift
-
-Aktuell nur alias für `\subsubsection`
 
 ## voting
 Parameter:
@@ -42,8 +36,6 @@ Kann aktuell nur ja-nein-neutral-Abstimmungen
 ## termin
 Parameter:
 1. Datum/Zeitraum
-
-Gibt aktuell nur Input aus.
 
 ## comment
 Parameter:
@@ -61,5 +53,9 @@ Kurzer Doppelpfeil nach rechts.
 ## La
 Kurzer Doppelpfeil nach links.
 
+## t
+Tabs, aktuell umgesetzt mit \looparrowright
+
 # Makefile
+work in progress
 Funktioniert nur auf Linux. Braucht `pdflatex` installiert.

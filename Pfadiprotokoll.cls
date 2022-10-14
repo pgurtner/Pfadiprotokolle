@@ -10,6 +10,7 @@
 \RequirePackage{titling}
 \RequirePackage{transparent}
 \RequirePackage[normalem]{ulem}
+\RequirePackage{amssymb}
 
 \setcounter{tocdepth}{1}
 \setlength{\parindent}{0pt}
@@ -58,12 +59,18 @@
 \newcommand{\termin}[1]{
     \textbf{#1}
 }
+
 \newcommand{\comment}[1]{
     \transparent{0.6}
     \textit{#1}
     \transparent{1}
 }
+
 \newcommand{\ra}{$\rightarrow$\ }
 \newcommand{\la}{$\leftarrow$\ }
 \newcommand{\Ra}{$\Rightarrow$\ }
 \newcommand{\La}{$\Leftarrow$\ }
+
+\renewcommand{\t}{
+    $\looparrowright$\ 
+}
