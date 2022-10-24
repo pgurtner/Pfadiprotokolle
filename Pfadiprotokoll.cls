@@ -11,40 +11,71 @@
 \RequirePackage{transparent}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{amssymb}
+\RequirePackage{array}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{tocloft}
+\RequirePackage{fancyhdr}
 
+\newcommand{\headingcolor}{\color{MidnightBlue}}
+\newcommand{\stdcolor}{\color{black}}
+
+\renewcommand\cftsecdotsep{\cftdot}
 \setcounter{tocdepth}{1}
 \setlength{\parindent}{0pt}
 
-\renewcommand*\contentsname{TOPs}
+\renewcommand*\contentsname{\headingcolor Tagesordnungspunkte}
 \geometry{
     a4paper,
     top=1.25cm
 }
 \renewcommand\maketitlehookc{\vspace{-10ex}}
 
-\newcommand{\header}[5][Protokoll Führungsrunde]{
+\newcommand{\header}[4][Protokoll Führungsrunde]{
     \title{#1}
     \date{#2}
     \author{}
     \maketitle
-    \begin{itemize}
-        \item Anwesend: #3
-        \item Unentschuldigt abwesend oder zu spät: #4
-        \item Protokollführung: #5
-    \end{itemize}
+
+    \begin{table}[h]
+        \def\arraystretch{1.5}
+        \centering
+        \begin{tabular}{|m{0.25\textwidth}|m{0.75\textwidth}|}
+            \hline
+            Abwesend & #3 \\
+            \hline
+            Protokollführung & #4 \\
+            \hline
+        \end{tabular}
+    \end{table}
     \tableofcontents
 }
 
 \newcommand{\topic}[1]{
+    \headingcolor
     \section{#1} \label{#1}
+    \stdcolor
 }
 
 \newcommand{\subtopic}[1]{
+    \headingcolor
     \subsection{#1} \label{#1}
+    \stdcolor
 }
 
 \newcommand{\subsubtopic}[1]{
+    \headingcolor
     \subsubsection{#1} \label{#1}
+    \stdcolor
+}
+
+\newcommand{\notes}[1]{
+    \begin{itemize}
+        #1
+    \end{itemize}
+}
+
+\newcommand{\nt}[1]{
+    \item #1
 }
 
 \newcommand{\voting}[4]{

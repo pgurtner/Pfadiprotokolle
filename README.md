@@ -8,9 +8,8 @@ https://www.ctan.org/pkg/xparse könnte sich für die Befehle anbieten.
 Parameter:
 1. Titel (default: `Protokoll Führungsrunde`)
 2. Datum
-3. Anwesend
-4. Abwesend
-5. Protokollführung
+3. Abwesend
+4. Protokollführung
 
 ## topic
 Parameter:
@@ -23,6 +22,15 @@ Parameter:
 ## subsubtopic
 Parameter:
 1. Überschrift
+
+## notes
+Parameter:
+1. Listenitems
+
+## nt
+Listenitem.
+Parameter:
+1. Itemtext
 
 ## voting
 Parameter:
