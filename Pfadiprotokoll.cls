@@ -50,22 +50,22 @@
     \tableofcontents
 }
 
-\newcommand{\topic}[1]{
-    \headingcolor
-    \section{#1} \label{#1}
-    \stdcolor
+\newcommand{\topic}[1]{%
+    \headingcolor%
+    \section{#1} \label{#1}%
+    \stdcolor%
 }
 
-\newcommand{\subtopic}[1]{
-    \headingcolor
-    \subsection{#1} \label{#1}
-    \stdcolor
+\newcommand{\subtopic}[1]{%
+    \headingcolor%
+    \subsection{#1} \label{#1}%
+    \stdcolor%
 }
 
-\newcommand{\subsubtopic}[1]{
-    \headingcolor
-    \subsubsection{#1} \label{#1}
-    \stdcolor
+\newcommand{\subsubtopic}[1]{%
+    \headingcolor%
+    \subsubsection{#1} \label{#1}%
+    \stdcolor%
 }
 
 \newcommand{\notes}[1]{
@@ -74,8 +74,8 @@
     \end{itemize}
 }
 
-\newcommand{\nt}[1]{
-    \item #1
+\newcommand{\nt}[1]{%
+    \item #1%
 }
 
 \newcommand{\voting}[4]{
@@ -87,14 +87,14 @@
     \end{itemize}
 }
 
-\newcommand{\termin}[1]{
-    \textbf{#1}
+\newcommand{\termin}[1]{%
+    \textbf{#1}%
 }
 
-\newcommand{\comment}[1]{
-    \transparent{0.6}
-    \textit{#1}
-    \transparent{1}
+\newcommand{\comment}[1]{%
+    \transparent{0.6}%
+    \textit{#1}%
+    \transparent{1}%
 }
 
 \newcommand{\ra}{$\rightarrow$\ }

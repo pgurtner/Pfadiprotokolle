@@ -1,0 +1,23 @@
+{
+  "name": "pfadiprotokolle",
+  "version": "1.0.0",
+  "description": "Kleine LaTeX Klasse für Protokolle bei den Pfadfindern.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgurtner/Pfadiprotokolle.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgurtner/Pfadiprotokolle/issues"
+  },
+  "homepage": "https://github.com/pgurtner/Pfadiprotokolle#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "typescript": "^4.8.4"
+  }
+}
