@@ -41,7 +41,7 @@
         \centering
         \begin{tabular}{|m{0.25\textwidth}|m{0.75\textwidth}|}
             \hline
-            Abwesend & #3 \\
+            Unentschuldigt zu spät oder abwesend & #3 \\
             \hline
             Protokollführung & #4 \\
             \hline
@@ -52,26 +52,26 @@
 
 \newcommand{\topic}[1]{%
     \headingcolor%
-    \section{#1} \label{#1}%
+    \section{#1} \label{#1-1}%
     \stdcolor%
 }
 
 \newcommand{\subtopic}[1]{%
     \headingcolor%
-    \subsection{#1} \label{#1}%
+    \subsection{#1} \label{#1-2}%
     \stdcolor%
 }
 
 \newcommand{\subsubtopic}[1]{%
     \headingcolor%
-    \subsubsection{#1} \label{#1}%
+    \subsubsection{#1} \label{#1-3}%
     \stdcolor%
 }
 
-\newcommand{\notes}[1]{
-    \begin{itemize}
-        #1
-    \end{itemize}
+\newcommand{\notes}[1]{%
+    \begin{itemize}%
+        #1%
+    \end{itemize}%
 }
 
 \newcommand{\nt}[1]{%
