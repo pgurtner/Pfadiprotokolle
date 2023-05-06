@@ -3,7 +3,11 @@ Kleine LaTeX Klasse für Protokolle bei den Pfadfindern.
 # todo
 https://www.ctan.org/pkg/xparse könnte sich für die Befehle anbieten.
 
-# Aktuelle Befehle
+# Pfadiprotokoll
+## breaking changes
+ * voting -> abstimmung
+ * comment -> kommentar
+
 ## header
 Parameter:
 1. Titel (default: `Protokoll Führungsrunde`)
@@ -32,7 +36,7 @@ Listenitem.
 Parameter:
 1. Itemtext
 
-## voting
+## abstimmung
 Parameter:
 1. Abstimmungsname
 2. Anzahl ja
@@ -45,7 +49,7 @@ Kann aktuell nur ja-nein-neutral-Abstimmungen
 Parameter:
 1. Datum/Zeitraum
 
-## comment
+## kommentar
 Parameter:
 1. Kommentar/Einwurf ohne Relevanz
 
@@ -63,6 +67,14 @@ Kurzer Doppelpfeil nach links.
 
 ## t
 Tabs, aktuell umgesetzt mit \looparrowright
+
+# FreiwilligPfadiprotokoll
+Unterklasse von Pfadiprotokoll.
+
+## header
+Parameter:
+1. Titel (default: `Protokoll Führungsrunde`)
+2. Datum
 
 # Makefile
 work in progress

@@ -15,6 +15,13 @@
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{tocloft}
 \RequirePackage{fancyhdr}
+\RequirePackage{tcolorbox}
+
+% https://tex.stackexchange.com/questions/458864/how-to-add-a-small-rounded-rectangle-around-a-word-inline
+\newtcbox{\inlinebox}[1][red]{on line,
+arc=3pt,colback=#1!10!white,colframe=#1!50!black,
+before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
+boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=.5pt}
 
 \newcommand{\headingcolor}{\color{MidnightBlue}}
 \newcommand{\stdcolor}{\color{black}}
@@ -78,7 +85,7 @@
     \item #1%
 }
 
-\newcommand{\voting}[4]{
+\newcommand{\abstimmung}[4]{
     Abstimmung: #1
     \begin{itemize}
         \item ja: #2
@@ -88,10 +95,10 @@
 }
 
 \newcommand{\termin}[1]{%
-    \textbf{#1}%
+  \inlinebox{\textbf{#1}}
 }
 
-\newcommand{\comment}[1]{%
+\newcommand{\kommentar}[1]{%
     \transparent{0.6}%
     \textit{#1}%
     \transparent{1}%
